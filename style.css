@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #f0ead6;
+  color: #1c352d;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 1rem;
+}
+
+.navbar {
+  background: #1c352d;
+  padding: 1rem;
+}
+.navbar ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.navbar a {
+  color: #f0ead6;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar a:hover, .navbar a.active {
+  color: #4caf50;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #1c352d, #4caf50);
+  color: white;
+}
+
+.content,
+.preview {
+  text-align: center;
+  padding: 2rem;
+}
+
+.projects-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+.projects-grid .card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.projects-grid .card h3 {
+  color: #4caf50;
+}
+.projects-grid .card p {
+  color: #5d3a00;
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  gap: 1rem;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+}
+.contact-form .btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.contact-form .btn:hover {
+  background: #5d3a00;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #1c352d;
+  color: #f0ead6;
+}
